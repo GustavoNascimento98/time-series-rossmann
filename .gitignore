@@ -1,0 +1,12 @@
+# ignore all __pycache__
+**__pycache__/
+
+# vscode
+.vscode
+
+# ipynb_checkpoints
+**.ipynb_checkpoints
+
+# ignoring subfolders
+/rossmann-telegram-api/
+/webapp/
