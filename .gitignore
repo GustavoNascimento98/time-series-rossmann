@@ -8,5 +8,6 @@
 **.ipynb_checkpoints
 
 # ignoring subfolders
-/rossmann-telegram-api/
-/webapp/
+#/rossmann-telegram-api/
+#/webapp/
+/data/checkpoint_dataframes
