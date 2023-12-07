@@ -29,7 +29,7 @@ A Rossmann opera mais de 3000 farmácias em 7 países europeus. Atualmente, os g
 <br/>
 
 <details>
-    <summary><b>Dados referentes as vendas</br></summary>
+    <summary><b>Dados referentes as vendas</b></summary>
 
 |   |   |
 |---|---|
@@ -48,15 +48,25 @@ A Rossmann opera mais de 3000 farmácias em 7 países europeus. Atualmente, os g
 ## Estratégia da solução.
 Esse projeto foi realizado seguindo os passos do método CRISP-DS.
 
-1. **Problema de Negócios:**
-2. **Entendimento de Negócio:**
-3. **Coleta de Dados:**
-4. **Limpeza dos Dados:**
-5. **Exploração dos Dados:**
-6. **Modelagem dos Dados:**
-7. **Aplicação de Algoritmos de Machine Learning:**
-8. **Avaliação de Performance:**
-9. **Publicação da Solução:**
+1. **Problema de Negócios:** Nesse primeira etapa do processo estamos interessados em entender o problema proposto e como as ferramentas de ciências de dados poderiam ser empregadas para criar uma solução.
+
+2. **Entendimento de Negócio:** Nessa fase temos entender o tipo de negócio em que nossa solução será aplicada: quais são os principais KPI's? Qual é a raíz do problema para o qual estamos desenvolvendo a solução? Quem são os stakeholders? Quais são os recursos financeiros / computacionais diponíveis? As respostas a essas perguntas, nos ajudará a entender qual é o tipo de problema (classificação, regressão, ...) e o formato de entrega mais adequado.
+
+3. **Descrição dos Dados:** Essa etapa é dedicada a entender os dados que descrevem o fenômeno, nesse caso o volume de vendas da rossmann, assim como fazer uma análise descritiva para entender o comportamento geral das features. Devemos análisar as seguintes perguntas: Quais são os tipos das variáveis? Eu tenho os recursos corretos para trabalhar? Existem dados faltantes? Qual é o motivo? O que isso representa?
+
+4. **Feature Engineering:** Nessa fase criamos um conjunto de hipóteses a partir do conhecimento adquirido nas etapas anteriores. Essas hipóteses nos auxilia no desenvolvimento de novas features, pois permitem enxergar atributos relevantes ao problema de negócios que não estão disponíveis nas features originais.
+
+5. **Exploração dos Dados:** A análise exploratória serve para medirmos o impacto das variáveis em relação a variável resposta; nessa etapa ganhamos experiência sobre o negócio, validamos hipóteses, geramos insights e adquirimos uma intuição de quais variáveis serão importantes para o modelo que será desenvolvido.
+
+6. **Modelagem dos Dados:** Nessa etapa realizamos transformações nos dados para prepará-los para serem usados nos algoritmos de Machine Learning e fizemos o split entre treino, validação e teste. Aqui aplicamos encoders em variáveis categóricas, e fizemos a reescala ou normalização das variáveis numéricas.
+
+7. **Feature Selection:** Nessa etapa utilizamos o algoritmo Boruta para selecionar as features que mais impactam a variável resposta e remover features que carregam o mesmo conteúdo de informação de outras (colineares). Além das selecionadas pela Boruta, foram incluídas consideradas relevantes pela análise exploratória de dados.
+
+8. **Aplicação de Algoritmos de Machine Learning:** Nessa etapa foi testado diferentes algoritmos de Machine Learning e selecionamos qual produziu o menor erro.
+
+9. **Avaliação de Performance:** Nessa etapa foi feita a tradução de performance do modelo em resultado de negócio.
+
+10. **Publicação da Solução:**: Nessa etapa desenvolvemos um bot no telegram capaz de acessar as análises realizadas.
 
 ## Top 3 Insights de dados.
 <img src="img/MindMapHypothesis.png" alt="drawing" width="800" height="600"/>
